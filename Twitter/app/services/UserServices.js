@@ -1,6 +1,6 @@
 const User = require('../models/users')
 
-class UserServices {
+class UserService {
     static create(id, username, name){
         return new User(id, username, name, "Sin bio")
 
@@ -10,9 +10,5 @@ class UserServices {
     }
 }
 
-const user = UserServices.create(1, "carlogilamar", "Carlo")
-const userInfoInList = UserServices.getInfo(user)
-console.log(userInfoInList)
 
-
-module.exports = UserServices
+module.exports = UserService
