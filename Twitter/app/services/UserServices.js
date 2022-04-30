@@ -15,6 +15,9 @@ class UserService {
        const usersUsernames = user.map(user => user.username)
        return usersUsernames
     }
+    static updateBio(user, bio){
+    user.setBio = bio
+    }
 }
 
 
